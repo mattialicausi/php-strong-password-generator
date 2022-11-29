@@ -19,19 +19,23 @@ $arraysimboli = explode(' ', $simboli);
 // var_dump($arraysimboli);
 
 $passLength = $_GET['passLen'];
+
+
+$passWord = [];
+$arrayCaratteri = array_merge($arrayalfabeto, $arrayAlfabeto, $arraynumeri, $arraysimboli);
+// var_dump($arrayCaratteri);
+// echo $arrayCaratteri[10];
 $n = 0;
+while ($n < $passLength) {
 
-$passWord = '';
+    $num = rand(0, count($arrayCaratteri));
 
-while ($n <= $passLength) {
+    $passWord[] = $arrayCaratteri[$num];
     $n++;
-    $el = rand(0, strlen($passLength));
-    echo $el;
 
-    $passWord = $el;
 }
 ;
-echo $passWord;
+var_dump($passWord);
 
 ?>
 
@@ -73,6 +77,12 @@ echo $passWord;
                 </div>
 
             </form>
+        </div>
+
+        <div class="container-password">
+            <!-- <h2>La tua password è
+                <?php ?>
+            </h2> -->
         </div>
 
     </main>
