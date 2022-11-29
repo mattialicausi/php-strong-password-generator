@@ -21,3 +21,6 @@ if (isset($_GET['passLen'])) {
 //ARRAY VUOTO PER CONTENERE I CARATTERI GENERATI NEL WHILE // UNISCO GLI ARRAY IN UNO SOLO
 $passWord = [];
 $arrayCaratteri = array_merge($arrayalfabeto, $arrayAlfabeto, $arraynumeri, $arraysimboli);
+
+//VARIABILE PER REINDIRIZZARE L'UTENTE A PASSWORD.PHP
+$redirect = false;

@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include __DIR__ . '/variables/variables.php';
 include __DIR__ . '/functions/functions.php';
 
@@ -32,7 +34,6 @@ include __DIR__ . '/functions/functions.php';
     </div>
 </main>
 
-<?php include './template/footer.php'; ?>
 
 </body>
 

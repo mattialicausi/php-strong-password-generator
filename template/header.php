@@ -15,5 +15,3 @@
         <header class="container p-4 text-center">
             <h1>Strong Password Generator</h1>
         </header>
-
-        ?>
