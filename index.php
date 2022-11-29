@@ -7,24 +7,15 @@ $simboli = "! # $ % & ( ) * + , \ - . / : ; < = > ? @ [ \ ] ^ _ { | } ";
 
 //ARRAY CONTENENTI I CARATTERI DELLE VARIABILI
 $arrayalfabeto = explode(' ', $alfabeto);
-// var_dump($arrayalfabeto);
-
 $arrayAlfabeto = explode(' ', $Alfabeto);
-// var_dump($arrayAlfabeto);
-
 $arraynumeri = explode(' ', $numeri);
-// var_dump($arraynumeri);
-
 $arraysimboli = explode(' ', $simboli);
-// var_dump($arraysimboli);
-
 $passLength = $_GET['passLen'];
 
 
 $passWord = [];
 $arrayCaratteri = array_merge($arrayalfabeto, $arrayAlfabeto, $arraynumeri, $arraysimboli);
-// var_dump($arrayCaratteri);
-// echo $arrayCaratteri[10];
+
 $n = 0;
 while ($n < $passLength) {
 
@@ -35,7 +26,8 @@ while ($n < $passLength) {
 
 }
 ;
-var_dump($passWord);
+
+$passwordGenerata = implode($passWord);
 
 ?>
 
@@ -79,10 +71,10 @@ var_dump($passWord);
             </form>
         </div>
 
-        <div class="container-password">
-            <!-- <h2>La tua password è
-                <?php ?>
-            </h2> -->
+        <div class="container-password container rounded-2 p-3 text-center">
+            <h2 class="text-white">La tua password è <br>
+                <?php echo $passwordGenerata ?>
+            </h2>
         </div>
 
     </main>
