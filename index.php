@@ -1,4 +1,14 @@
 <?php
+//VARIABILI CONTENENTI VALORI PER LE PASSWORD
+$alfabeto = 'abcdefghijklmnopqrstuvwxyz';
+$Alfabeto = strtoupper($alfabeto);
+$numeri = '0123456789';
+$simboli = "!#$%&()*+,\-./:;<=>?@[\\\]^_{|}";
+
+// echo ($alfabeto);
+// echo ($Alfabeto);
+// echo ($numeri);
+// echo ($simboli);
 
 ?>
 
@@ -26,12 +36,17 @@
             Lorem ipsum dolor sit am
         </div>
 
-        <div class="container-form container">
+        <div class="container-form container p-4 rounded-2">
             <form action=".index.php" method="GET">
 
-                <div class="container-input d-flex justify-content-between p-4 rounded-2">
+                <div class="container-input d-flex justify-content-between">
                     <h3>Lunghezza password:</h3>
                     <input type="number" name="passLen" id="passLen">
+                </div>
+
+                <div class="container-btn">
+                    <button type="submit" class="btn btn-primary">Genera</button>
+                    <button type="reset" class="btn btn-secondary">Annulla</button>
                 </div>
 
             </form>
