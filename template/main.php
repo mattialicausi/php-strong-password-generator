@@ -1,14 +1,4 @@
 <?php
-
-include __DIR__ . '/variables/variables.php';
-include __DIR__ . '/functions/functions.php';
-
-?>
-
-<?php include './template/header.php'; ?>
-
-
-
 <main>
     <h2 class="text-center text-white p-2">Genera una password sicura</h2>
     <div class="container-alert rounded-2 p-4 container mb-4">
@@ -32,8 +22,4 @@ include __DIR__ . '/functions/functions.php';
     </div>
 </main>
 
-<?php include './template/footer.php'; ?>
-
-</body>
-
-</html>
+?>
