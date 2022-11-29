@@ -1,14 +1,37 @@
 <?php
 //VARIABILI CONTENENTI VALORI PER LE PASSWORD
-$alfabeto = 'abcdefghijklmnopqrstuvwxyz';
+$alfabeto = 'a b c d e f g h i j k l m n o p q r s t u v w x y z';
 $Alfabeto = strtoupper($alfabeto);
-$numeri = '0123456789';
-$simboli = "!#$%&()*+,\-./:;<=>?@[\\\]^_{|}";
+$numeri = '0 1 2 3 4 5 6 7 8 9';
+$simboli = "! # $ % & ( ) * + , \ - . / : ; < = > ? @ [ \ ] ^ _ { | } ";
 
-// echo ($alfabeto);
-// echo ($Alfabeto);
-// echo ($numeri);
-// echo ($simboli);
+//ARRAY CONTENENTI I CARATTERI DELLE VARIABILI
+$arrayalfabeto = explode(' ', $alfabeto);
+// var_dump($arrayalfabeto);
+
+$arrayAlfabeto = explode(' ', $Alfabeto);
+// var_dump($arrayAlfabeto);
+
+$arraynumeri = explode(' ', $numeri);
+// var_dump($arraynumeri);
+
+$arraysimboli = explode(' ', $simboli);
+// var_dump($arraysimboli);
+
+$passLength = $_GET['passLen'];
+$n = 0;
+
+$passWord = '';
+
+while ($n <= $passLength) {
+    $n++;
+    $el = rand(0, strlen($passLength));
+    echo $el;
+
+    $passWord = $el;
+}
+;
+echo $passWord;
 
 ?>
 
