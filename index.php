@@ -60,7 +60,7 @@ echo $passWord;
         </div>
 
         <div class="container-form container p-4 rounded-2">
-            <form action=".index.php" method="GET">
+            <form action="index.php" method="GET">
 
                 <div class="container-input d-flex justify-content-between">
                     <h3>Lunghezza password:</h3>
